@@ -41,6 +41,9 @@ const lands = [
 // Chapter 1
 // ============
 const $bodyVar = $('body');
+
+
+
 const makeMiddleEarth = () => {
 
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
@@ -80,8 +83,16 @@ const makeHobbits = () => {
   console.log('Make hobbits');
 
   // 1. display an unordered list of the hobbits in the shire.
+  let $hobbitUl = $('<ul />');
+  let $shireArticle = $('#The-Shire');
+  $shireArticle.append($hobbitUl); 
 
   // 2. give each hobbit a class of "hobbit"
+
+for (let i = 0; i < hobbits.length; i++) {
+	let $hobbitListItem = $(`<li>${hobbits[i]}</li>`);
+	$shireArticle.append($hobbitListItem);
+}
 
   // hint: create a 'ul' outside the loop upon which to append the 'li's
 
