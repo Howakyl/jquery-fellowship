@@ -86,7 +86,7 @@ const makeHobbits = () => {
   let $hobbitUl = $('<ul />');
   let $shireArticle = $('#The-Shire');
   $shireArticle.append($hobbitUl); 
-
+  $hobbitUl.attr('ID', 'hobbit-ul')
   // 2. give each hobbit a class of "hobbit"
 
 for (let i = 0; i < hobbits.length; i++) {
@@ -175,6 +175,12 @@ const makeBuddies = () => {
 // Chapter 6
 // ============
 const leaveTheShire = () => {
+  const $liElToMove = $(".hobbit");
+  let $rivendell = $('#Rivendell');
+
+  $hobbitUl = $('#hobbit-ul');
+  $hobbitUl.appendTo($rivendell);
+  $liElToMove.appendTo($hobbitUl);
 
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
 
