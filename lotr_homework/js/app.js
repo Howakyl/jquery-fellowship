@@ -197,7 +197,9 @@ const leaveTheShire = () => {
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-
+  const $buddyList = $('.buddy');
+  const $aragorn = $buddyList.eq(3);
+  $aragorn.text('Aragorn');
   // hint: You can get a list of elements by tag name, such as 'aside'
 
 };
