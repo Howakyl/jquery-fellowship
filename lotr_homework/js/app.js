@@ -254,11 +254,15 @@ $gandalf.addClass('the-white');
 const hornOfGondor = () => {
 
   // 1. create a pop-up alert that the horn of gondor has been blown
-
+alert('The horn of Gondor has been blown!');
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+const $buddyList = $('.buddy');
+const $baddyList = $('.baddy');
+const $boromir = $buddyList.eq(4);
+const $urukHai = $baddyList.eq(2);
+$boromir.css('text-decoration', 'line-through');
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+$urukHai.remove();
 };
 
 // COMMIT YOUR WORK
