@@ -138,6 +138,11 @@ ul {
   margin: auto;
 }
 
+.the-white {
+  background-color: white;
+  border: 3px solid grey;
+}
+
 #mount-doom {
   height: 100px;
   width: 100px;
