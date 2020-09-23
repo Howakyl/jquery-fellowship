@@ -272,11 +272,15 @@ $urukHai.remove();
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
-
+  const $frodo = $('.hobbit').eq(0);
+  const $sam = $('.hobbit').eq(1);
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
-
+  $frodo.appendTo('#Mordor');
+  $sam.appendTo('#Mordor');
   // 2. add a div with an id of 'mount-doom' to Mordor
-
+  $mountDoom = $('<div />');
+  $mountDoom.attr('id', 'mount-doom');
+  $mountDoom.appendTo('#Mordor');
 };
 
 // COMMIT YOUR WORK
